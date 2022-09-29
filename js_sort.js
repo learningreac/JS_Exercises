@@ -29,7 +29,7 @@ const insertSort = arr => {
 		let j=i;
 
 		// 向前找； 当前j之后的都是待处理的，先不管
-		while(result[j-1] > result[j] && j>=0) { 
+		while(result[j-1] > result[j] && j-1>=0) { 
 			[result[j-1], result[j]] = [result[j], result[j-1]];
 			j--;
 		};
